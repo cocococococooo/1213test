@@ -8,10 +8,19 @@
     <link rel="stylesheet" href="build/css/_variables.css">
     <style>
         button {
-            background-color: var(--sd-theme1-arco-light-primary-primary-4);
-            border: none;
-            color: rgb(255, 255, 255);
+            background-color: var(--sd-theme1-arco-light-bg-color-bg-1);
+            color: var(--sd-theme1-arco-light-text-color-text-1);
+            border-color: var(--sd-theme1-arco-light-bg-color-bg-1);
 
+        }
+        table {
+            background-color: var(--sd-theme1-arco-light-bg-color-bg-1);
+            color: var(--sd-theme1-arco-light-text-color-text-1);
+        }
+        form {
+            width: 500px;
+            background-color: var(--sd-theme1-arco-light-bg-color-bg-1);
+            color: var(--sd-theme1-arco-light-text-color-text-1);
         }
     </style>
 </head>
@@ -19,5 +28,39 @@
     <button>
         test button
     </button>
+
+    <table border=1px width="500" height="150">
+        <!-- <caption><strong>表格演示</strong></caption> -->
+        <thead>
+            <tr>
+                <th>描述1</th>
+                <th>描述2</th>
+                <th>描述3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>XX</td>
+                <td rowspan="2">XXX</td>
+                <td>XXXX</td>
+            </tr>
+            <tr>
+                <td>XX</td>
+                <td>XXXX</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>描述4</td>
+                <td colspan="2">XXXXXXX</td>
+            </tr>
+        </tfoot>
+    </table>
+    <form>
+        状况：
+        <label><input type="radio" name="marrige" checked>status 1</label>
+        <label><input type="radio" name="marrige">status 2</label>
+        <label><input type="radio" name="marrige">status 3</label>
+    </form>
 </body>
 </html>
